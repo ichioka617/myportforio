@@ -1,0 +1,79 @@
+@media screen and (max-width:700px){
+  #header-top{
+    height: 10rem;
+
+  }
+  #headercnt{
+    flex-direction: column;
+  width: 100%;
+  }
+  #header-main{
+    margin-top: 0;
+    height: 50rem;
+  }
+#logo{
+  margin: 0 auto;
+width: 30rem;
+padding:0;
+}
+#navmenu{
+  justify-content: space-around;
+padding: 0;
+width: 100%;
+}
+#navmenu li{
+padding:0;
+}
+#navmenu li a{
+  font-size:1.3rem
+}
+.content{
+  width: 80%;
+  
+  flex-direction: column;
+}
+.aboutimg1{
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+}
+.cnt{
+  width: 100%;
+}
+.abouttext{
+  font-size: 1.3rem;
+  letter-spacing: 0.1rem;
+  line-height: 2;
+}
+#services{
+  padding-top: 3rem;
+}
+.cnt-service{
+width: 100%;
+margin-bottom: 5rem;
+}
+
+.work{
+  width: 100%;
+  height: 30rem;
+}
+
+
+.skillmenu{
+  margin: 0;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.skillmenu li{
+  margin-top: 1.6rem;
+}
+#typewritter{
+font-size: 4rem;
+}
+#contactform{
+ 
+  font-size: 1.7rem;
+}
+
+
+}
