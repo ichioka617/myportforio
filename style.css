@@ -183,10 +183,10 @@ box-shadow: 1px 1px 4px;
 }
 .work{
   width: 45%;
-  height: 40rem;
+  height:auto;
   margin-bottom: 5rem;
-  box-shadow: 2px 2px 10px gray;
   transition: 0.5s;
+  border:1px solid rgb(185, 185, 185);
 }
 .workimg{
   width: 100%;
@@ -194,7 +194,7 @@ box-shadow: 1px 1px 4px;
   transition: 0.3s;
 }
 .workimg:hover{
-opacity: 0.2;
+opacity: 0.8;
 }
 #contact{
   display: flex;
