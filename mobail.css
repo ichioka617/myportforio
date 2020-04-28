@@ -9,7 +9,6 @@ top: 0;
   width: 100%;
   }
   #header-main{
-
     height: 100vh;
   width: 100%;
   }
@@ -30,12 +29,10 @@ padding:0;
   font-size:1.3rem
 }
 .content{
-  width: 80%;
-  
-  flex-direction: column;
+  display: block;
 }
 .aboutimg1{
-  width: 80%;
+  width: 100%;
   height: auto;
   margin: 0 auto;
 }
@@ -54,13 +51,6 @@ padding:0;
 width: 100%;
 margin-bottom: 5rem;
 }
-
-.work{
-  width: 100%;
-  height: 30rem;
-}
-
-
 .skillmenu{
   margin: 0;
   flex-wrap: wrap;
@@ -69,13 +59,22 @@ margin-bottom: 5rem;
 .skillmenu li{
   margin-top: 1.6rem;
 }
+.workimg{
+  height: auto;
+}
+.sample5 .caption{
+  display: block;
+  text-align: center;
+  margin-top: 8rem;
+	font-size:2.2rem;
+  color:	#fff;
+  padding: 1rem 0;
+  background-color: rgba(0,0,0,0.7);
+}
 #typewritter{
 font-size: 4rem;
 }
 #contactform{
- 
-  font-size: 1.7rem;
+font-size: 1.7rem;
 }
-
-
 }

@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html lang="ja;">
+<html lang="ja">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
   <title>ayumuichioka</title>
-
+  <link href="lightbox.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lato:100,700,400" rel="stylesheet" type="text/css">
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
- 
+
+  
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" type="text/css" href="mobail.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  
 </head>
 <body>
   <header>
@@ -18,7 +19,7 @@
       <div class="content">
 <div id="headercnt">
 
-  <img src="AYUMU ICHIOKA-logo (2).png" id="logo">
+  <img src="img/AYUMU ICHIOKA-logo (2).png" id="logo">
   <nav id="navmenu">
     <li><a href="#title1">About</a></li>
     <li><a href="#title2">Service</a></li>
@@ -32,19 +33,22 @@
     <div id="header-main">
       <div id="typewritter"><span id="ityped" class="ityped"></span></div>
     </div>
-    
   </header>
 
   <main>
     <div id="about">
       <h1 id="title1">About</h1>
       <div class="content">
-        <img src="mainimg.jpg" class="aboutimg1 fadein">
+        <img src="img/mainimg.jpg" class="aboutimg1 fadein">
         <div class="cnt">
   
           <h1 class="abouttitle fadein">profile</h1>
-          <p class="abouttext fadein">市岡歩夢<br>1997年岐阜県出身。<br>岐阜県土岐市にてwab制作を全般に活動しております。<br>webの知識がないお客様でも安心して任せてもらえるように、コミュニケーションを頻繁に取ることを意識し、お客様好みのWebサイトを制作致します。
-            一眼レフでの写真撮影、Photoshop,Lightroomを使用した画像編集やレタッチを得意としておりますのでWEBサイトに掲載する画像などの相談も受け付けております。
+          <p class="abouttext fadein">市岡歩夢<br>1997年岐阜県出身。<br>幼い娘、妻と３人暮らし。普段は子育てとプログラミング学習に没頭しています。
+           <br>岐阜県土岐市にてWEB制作を全般に活動しております。<br>
+           
+           WEBサイトを作成するにあたり、お客様の目的を理解し（集客、デザイン、etc）
+          目的に沿ったWEBサイトを作成します。
+          WEBの知識の無いお客様も、こちらから積極的にヒアリングさせていただきますので安心してお任せください。
           </p>
           <h1 class="abouttitle fadein">
             Skill
@@ -108,21 +112,21 @@ SEOとは検索エンジン最適化のことです。簡単に説明します�
     <div id="works">
       <h1 id="title3">Works</h1>
       <div class="content">
-        <a href="#" class="work fadein">
-          <img src="work1.png" class="workimg">
-        
-         </a>
-        <a href="#" class="work fadein">
-          <img src="" class="workimg">
-         </a>
+        <div class="sample5 fadein">
+           <a href="img/isara1.5.png" data-lightbox="img1" data-title="2020年３月        ISARA摸写"><img src="img/isara.png" class="workimg">
+        <div class="mask">
+          <div class="caption">iSara摸写</div>
+        </div>
+        </a>
       </div>
-      <div class="content">
-        <a href="#" class="work fadein">
-          <img src="" class="workimg">
-          </a>
-        <a href="#" class="work fadein">
-          <img src="" class="workimg">
-      </a>
+        <div class="sample5 fadein">
+          <a href="img/work1.5.png" data-lightbox="img1" data-title="2020年4月コーポレートサイト">
+            <img src="img/work1.png" class="workimg">
+        <div class="mask">
+          <div class="caption">コーポレートサイト摸写</div>
+        </div>
+        </a>
+      </div>
       </div>
     </div>
     <div id="contact">
@@ -163,5 +167,7 @@ ityped.init(document.querySelector("#ityped"), {
     })   
 
 </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="lightbox.js"></script>
 </body>
 </html>

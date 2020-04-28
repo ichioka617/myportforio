@@ -39,8 +39,8 @@ z-index: 999;
  
 }
 #logo{
-  width: 50rem;
-  padding-bottom: 5rem; 
+width: 50rem;
+padding-bottom: 5rem;
 }
 #navmenu{
   display: flex;
@@ -75,11 +75,10 @@ z-index: 999;
   transform-origin: left top;
   transform: scale(1, 1);
 }
-
 #header-main{
   width: 100%;
   height: 100vh;
-background-image: url(main.jpg);
+background-image: url(img/main.jpg);
 background-size: cover;
 }
 #title1,#title2,#title3,#title4{
@@ -87,8 +86,8 @@ font-family:'Lato', sans-serif;
 font-size: 4rem;
 font-weight: 100;
   margin: 0 auto;
-  margin: 8rem 0 8rem 0;
-  padding-top: 10rem;
+
+  padding:10rem 3rem;
 text-align: center;
 }
 #skill{
@@ -98,15 +97,14 @@ text-align: center;
 }
 .cnt{
 width: 50%;
-height: 50rem;
+height: auto;
 }
 .aboutimg1{
-  
-box-shadow: 1px 1px 10px gray;
- border-radius: 30rem;
-width: 38%;
-  height: 33rem;
-  margin-top: 10rem;
+box-shadow: 1px 1px 2px gray;
+width: 40%;
+height: 80%;
+  margin-top: 5rem;
+  border-radius: 0.5rem;
 }
 
 .abouttitle{
@@ -129,8 +127,8 @@ width: 38%;
 .cnt-service{
   border:1px solid 
   rgba(0,0,0,0.3);
-  box-shadow: 5px 5px 10px gray;
-  border-radius: 1rem;
+  box-shadow: 2px 2px 4px gray;
+  border-radius: 0.5rem;
   width: 28rem;
   height: 40rem;
   transition: 0.5s;
@@ -173,29 +171,55 @@ width: 38%;
   margin-top: 5rem;
 }
 .skillmenu li{
-  border-radius: 2rem;
+  border-radius: 0.5rem;
 font-size: 1.3rem;
 padding: 1rem;
 box-shadow: 1px 1px 4px;
 }
-.works{
+#works{
   width: 100%;
-}
-.work{
-  width: 45%;
-  height:auto;
-  margin-bottom: 5rem;
-  transition: 0.5s;
-  border:1px solid rgb(185, 185, 185);
+  height: auto;
 }
 .workimg{
   width: 100%;
-  height:auto;
-  transition: 0.3s;
+  height:39rem;
+  border: 1px solid rgb(175, 175, 175);
 }
-.workimg:hover{
-opacity: 0.8;
+
+.sample5 {
+  position: relative;
+	width:100%;
+	height:auto;
+  overflow:hidden;
+ margin-top: 3rem;
+  
 }
+.sample5 .caption{
+  display: block;
+  text-align: center;
+  margin-top: 17rem;
+	font-size:2.2rem;
+  color:	#fff;
+  padding: 1rem 0;
+  background-color: rgba(0,0,0,0.7);
+}
+.sample5 .mask {
+	width:100%;
+	height:100%;
+	position:	absolute;
+  top:0;
+	left:0;
+	background-color:	rgba(0,0,0,0.6);
+	-webkit-transition:	all 0.4s ease;
+	transition:		all 0.4s ease;
+	-webkit-transform:	scale(0);	/* 大きさを０にして表示しない */
+	transform:		scale(0);
+}
+.sample5:hover .mask {
+	-webkit-transform:	scale(1);	/* 大きさを１にして表示する */
+	transform:	scale(1);
+}
+
 #contact{
   display: flex;
   flex-direction: column;
@@ -240,7 +264,7 @@ align-items: center;
 
 #typewritter {
   position: absolute;
-  top: 45%;
+  top: 55%;
   left: 50%;
   -ms-transform: translate(-50%,-50%);
   -webkit-transform : translate(-50%,-50%);
