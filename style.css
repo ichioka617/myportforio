@@ -10,6 +10,7 @@ font-size:10px;
 }
 body{
 width: 100%;
+background-color: rgb(243, 243, 243);
 }
 a{
   text-decoration: none;
@@ -20,7 +21,7 @@ li{
 #header-top{
   width: 100%;
 height: 15rem;
-background-color: #fff;
+background-color:rgba(255, 255, 255, 1);
 z-index: 999;
 
 }
@@ -32,22 +33,23 @@ z-index: 999;
   margin: 0 auto;
 }
 #headercnt{
-  width: 100%;
+  width: 80%;
   display: flex;
-  justify-content: space-between;
+  justify-content:space-between;
   align-items: center;
  
 }
 #logo{
-width: 50rem;
-padding-bottom: 5rem;
+width: 30rem;
+
 }
 #navmenu{
   display: flex;
- padding-top: 5rem;
+  justify-content: end;
+ padding-top: 10rem;
 }
 #navmenu li{
-  padding-right: 5rem;
+  padding-left: 5rem;
 }
 #navmenu li a {
   position: relative;
@@ -86,7 +88,6 @@ font-family:'Lato', sans-serif;
 font-size: 4rem;
 font-weight: 100;
   margin: 0 auto;
-
   padding:10rem 3rem;
 text-align: center;
 }
@@ -100,11 +101,11 @@ width: 50%;
 height: auto;
 }
 .aboutimg1{
-box-shadow: 1px 1px 2px gray;
+position: relative;
 width: 40%;
 height: 80%;
   margin-top: 5rem;
-  border-radius: 0.5rem;
+  border-radius: 0.3rem;
 }
 
 .abouttitle{
@@ -125,18 +126,26 @@ height: 80%;
 }
 /* サービスカード */
 .cnt-service{
-  border:1px solid 
-  rgba(0,0,0,0.3);
-  box-shadow: 2px 2px 4px gray;
-  border-radius: 0.5rem;
+  background-color:rgb(255, 255, 255);
+border-radius: 0.5rem;
   width: 28rem;
   height: 40rem;
-  transition: 0.5s;
+position: relative;
+z-index: 1;
+border-radius: 0.;
 }
-.cnt-service:hover{
-  transform: translateY(-10px);
+.cnt-service::after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    content: '';
+    box-shadow: 0 10px 10px rgba(0,0,0,.3);
+    border-radius: 0.5rem;
+  }
 
-}
 .directionja{
   font-size: 2.5rem;
   font-family:  游ゴシック, "Yu Gothic", YuGothic, HiraKakuProN-W3, メイリオ, Meiryo, sans-serif;
@@ -220,28 +229,72 @@ box-shadow: 1px 1px 4px;
 	transform:	scale(1);
 }
 
-#contact{
-  display: flex;
-  flex-direction: column;
-align-items: center;
+
+.contactform{
+  display: block;
+  width: 40%;
+  height: auto;
+  text-align: center;
+ background-image: url(img/main.jpg);
+ background-size: cover;
+ border-radius:1rem;
+ margin-bottom: 10rem;
+ position: relative;
 }
-#contactform {
-  display: inline-block;
-  padding: 1rem;
-  margin-bottom: 7rem;
-  background: linear-gradient(left,rgb(156, 155, 155),#fff);
-  background: linear-gradient(left,rgb(163, 162, 162),#fff);
-  background: linear-gradient(to right,rgb(165, 164, 164),#fff);
-  color: rgb(71, 70, 70);
-box-shadow:2px 2px 4px #333;
-font-size: 2rem;
+
+.contactform::after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 15px;
+  right: 15px;
+  z-index: -1;
+  content: '';
+  box-shadow: 0 25px 25px rgba(0,0,0,.5);
+  border-radius: 100px / 15px
+}
+
+.label{
+  font-size: 2rem;
+  color: #fff;
+}
+.item{
+padding-top: 5rem;
+padding-bottom: 3rem;
+}
+.inputs{
+  font-size: 2rem;
+  width: 30rem;
+  height: 4rem;
+  border-radius: 1rem;
+  border:1px  solid #333;
+}
+::placeholder{
+color: rgb(206, 206, 206);
+}
+.area3{
+height: 10rem;
+}
+.btn-area{
+text-align: center;
+padding-bottom: 3rem;
+}
+input[type="submit"]{
 border-radius: 1rem;
+padding:1rem 2rem ;
+margin-right: 2rem;
+text-align: center;
+border: none;
+font-size: 2rem;
+box-shadow: 4px 4px 8px;
 }
-#contactform:hover{
-opacity: 0.5;
+input[type="reset"]{
+font-size: 2rem;
+border: none;
+padding: 1rem 2rem;
+border-radius: 0.5rem;
+box-shadow: 4px 4px 8px ;
 }
-
-
 footer{
   height: 6rem;
   width: 100%;
@@ -303,7 +356,9 @@ align-items: center;
       }
   }
 
+  @import url(https://fonts.googleapis.com/css?family=Raleway:300);
+  @import url(https://fonts.googleapis.com/css?family=Lusitana:400,700);
+  
 
-
-
-
+  
+   

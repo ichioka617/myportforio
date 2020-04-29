@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
   <title>ayumuichioka</title>
-  <link href="lightbox.css" rel="stylesheet">
+  <link href="lightbox.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lato:100,700,400" rel="stylesheet" type="text/css">
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
 
@@ -19,14 +19,14 @@
       <div class="content">
 <div id="headercnt">
 
-  <img src="img/AYUMU ICHIOKA-logo (2).png" id="logo">
+  <img src="img/name.JPG" id="logo">
   <nav id="navmenu">
     <li><a href="#title1">About</a></li>
     <li><a href="#title2">Service</a></li>
     <li><a href="#title3">Works</a></li>
     <li><a href="#title4">Contact</a></li>
   </nav>
-  <div class="border"></div>
+  
     </div>
       </div>
     </div>
@@ -57,10 +57,10 @@
             <li><a>HTML</a></li>
             <li><a>CSS</a></li>
             <li><a>Jquery</a></li>
+            <li><a>PHP</a></li>
             <li><a>WardPress</a></li>
             <li><a>Photoshop</a></li>
             <li><a>Lightroom</a></li>
-            
           </ul>
         </div>
       
@@ -131,7 +131,26 @@ SEOとは検索エンジン最適化のことです。簡単に説明します�
     </div>
     <div id="contact">
       <h1 id="title4">Contact</h1>
-<a href="https://forms.gle/UKoqrw1ENyXp657v5" id="contactform">料金相談、お問い合わせはこちら</a>
+      <!-- コンタクトフォーム -->
+      <form action=".php" method="post">
+      <div class="content contactform">
+  <div class="item">
+    <label class="label"></label>
+    <input class="inputs" type="text" name="name" placeholder="name">
+  </div>
+  <div class="item">
+    <label class="label"></label>
+    <input class="inputs" type="email" name="email" placeholder="e-mail">
+  </div>
+  <div class="item">
+    <label class="label"></label>
+    <textarea class="inputs area3" name="comment" placeholder="comment"></textarea>
+  </div>
+  <div class="btn-area">
+    <input type="submit" value="send"><input type="reset" value="riset">
+  </div>
+</form>
+    </div>
     </div>
   </main>
   <footer>
@@ -168,6 +187,6 @@ ityped.init(document.querySelector("#ityped"), {
 
 </script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="lightbox.js"></script>
+<script src="lightbox.min.js"></script>
 </body>
 </html>

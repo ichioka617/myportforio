@@ -14,8 +14,9 @@ top: 0;
   }
 #logo{
   margin: 0 auto;
-width: 30rem;
-padding:0;
+width: 20rem;
+padding-top: 2rem;
+padding-bottom:2rem;
 }
 #navmenu{
   justify-content: space-around;
@@ -74,7 +75,14 @@ margin-bottom: 5rem;
 #typewritter{
 font-size: 4rem;
 }
-#contactform{
-font-size: 1.7rem;
+
+.contactform{
+  width: 80%;
+}
+.inputs{
+  width: 80%;
+}
+.label{
+  font-size: 1.5rem;
 }
 }
