@@ -246,11 +246,11 @@ box-shadow: 1px 1px 4px;
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 15px;
-  right: 15px;
+  left:0;
+  right: 0;
   z-index: -1;
   content: '';
-  box-shadow: 0 25px 25px rgba(0,0,0,.5);
+  box-shadow: 0 30px 30px rgba(0,0,0,.6);
   border-radius: 100px / 15px
 }
 
@@ -287,13 +287,15 @@ text-align: center;
 border: none;
 font-size: 2rem;
 box-shadow: 4px 4px 8px;
+background-color: white;
 }
 input[type="reset"]{
-font-size: 2rem;
+font-size: 1.5rem;
 border: none;
-padding: 1rem 2rem;
+
 border-radius: 0.5rem;
 box-shadow: 4px 4px 8px ;
+background-color: white;
 }
 footer{
   height: 6rem;
