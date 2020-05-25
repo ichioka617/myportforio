@@ -1,6 +1,7 @@
+
 @charset"utf-8";
 *{
- 
+
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -23,7 +24,7 @@ li{
 height: 15rem;
 background-color:rgba(255, 255, 255, 1);
 z-index: 999;
-
+box-shadow:2px 2px 6px gray;
 }
 
 .content{
@@ -37,7 +38,7 @@ z-index: 999;
   display: flex;
   justify-content:space-between;
   align-items: center;
- 
+
 }
 #logo{
 width: 30rem;
@@ -78,11 +79,22 @@ width: 30rem;
   transform: scale(1, 1);
 }
 #header-main{
+  position: relative;
   width: 100%;
   height: 100vh;
 background-image: url(img/main.jpg);
 background-size: cover;
 }
+#header-main::before{
+  content: '';
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0,0,0,.2);
+}
+
 #title1,#title2,#title3,#title4{
 font-family:'Lato', sans-serif;
 font-size: 4rem;
@@ -150,7 +162,7 @@ border-radius: 0.;
   font-size: 2.5rem;
   font-family:  游ゴシック, "Yu Gothic", YuGothic, HiraKakuProN-W3, メイリオ, Meiryo, sans-serif;
   font-weight: 400;
-  opacity: 0.7;
+  opacity: 0.6;
   text-align: center;
 }
 .directionen{
@@ -201,7 +213,7 @@ box-shadow: 1px 1px 4px;
 	height:auto;
   overflow:hidden;
  margin-top: 3rem;
-  
+
 }
 .sample5 .caption{
   display: block;
@@ -250,7 +262,7 @@ box-shadow: 1px 1px 4px;
   right: 0;
   z-index: -1;
   content: '';
-  box-shadow: 0 30px 30px rgba(0,0,0,.6);
+  box-shadow: 0 30px 30px rgba(0,0,0,.5);
   border-radius: 100px / 15px
 }
 
@@ -324,11 +336,11 @@ align-items: center;
   -ms-transform: translate(-50%,-50%);
   -webkit-transform : translate(-50%,-50%);
   transform : translate(-50%,-50%);
-  
+
   text-align: center;
   color: white;
-
-  font-size: 6.25em;
+opacity: 0.8;
+  font-size: 6.5em;
   margin: 0;
   }
   .ityped-cursor {
@@ -339,19 +351,19 @@ align-items: center;
     animation: blink 0.3s infinite;
     animation-direction: alternate;
   }
-  
+
   @keyframes blink {
       100% {
           opacity: 0;
       }
   }
-  
+
   @-webkit-keyframes blink {
       100% {
           opacity: 0;
       }
   }
-  
+
   @-moz-keyframes blink {
       100% {
           opacity: 0;
@@ -360,7 +372,3 @@ align-items: center;
 
   @import url(https://fonts.googleapis.com/css?family=Raleway:300);
   @import url(https://fonts.googleapis.com/css?family=Lusitana:400,700);
-  
-
-  
-   
